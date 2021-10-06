@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color:pink;
+      }
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-nav">
+      <ul>
+        <nav>
+          <li><a href="index.html">Home</a> </li>
+          <li><a href="firstweb.html">Lunch</a> </li>
+          <li><a href="recap.html">Recap</a></li>
+          <li><a href="bulb.html">JavaScript</a></li>
+        </nav>
+      </ul>
+    </div>
+    <h1>My First JavaScript</h1>
+
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+
+    <p id="demo"></p>
+
+    <h2>What Can JavaScript Do?</h2>
+    <p>JavaScript can change HTML attribute values.</p>
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+  </body>
+</html>
